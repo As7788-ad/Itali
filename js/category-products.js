@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 id: 'thobe2',
                 name: 'ثوب عصري بقصة ضيقة (سليم فت)',
                 price: 'YR 9000',
-                image:  src ="/imgs/thobs/th1.jpg",
+                image:  src ="imgs/thobs/th1.jpg",
                 description: `
                     <p>ثوب عصري بقصة ضيقة (Slim Fit) تبرز أناقة القوام وتوفر مظهراً حديثاً وجذاباً. مثالي للشباب ولمن يفضلون الإطلالة المواكبة للموضة، مع الحفاظ على الهوية التقليدية.</p>
                     <h4>تفاصيل المنتج:</h4>
@@ -739,6 +739,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         modalProductPrice.textContent = product.price;
                         modalProductDescription.innerHTML = product.description;
                         productDetailsModal.style.display = 'block';
+                        
+        // ✅ إدخال حالة جديدة في سجل المتصفح
+        history.pushState({ modalOpen: true }, '', `#product-${productId}`);
                     }
                 });
             });
@@ -750,6 +753,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (closeButton) {
             closeButton.addEventListener('click', () => {
                 productDetailsModal.style.display = 'none';
+                // ✅ الرجوع خطوة للخلف (إزالة الهاش)
+        history.back();
             });
         }
 
@@ -757,6 +762,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('click', (event) => {
             if (event.target == productDetailsModal) {
                 productDetailsModal.style.display = 'none';
+                 history.back();
             }
         });
     }
