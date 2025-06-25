@@ -302,7 +302,7 @@ section {
     color: var(--light-text-color);
     padding: 80px 0;
     text-align: center;
-    background-image: url('https://images.pexels.com/photos/3771088/pexels-photo-3771088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Subtle background image */
+background-image: url('../imgs/contat.png');
     background-size: cover;
     background-position: center;
     position: relative;

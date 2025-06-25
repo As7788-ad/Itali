@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
                 <p>اختر ثيابك من "لمسات الإيطالي" لتشعر بالثقة والراحة في كل الأوقات.</p>
             `,
-            image: 'https://images.pexels.com/photos/6684824/pexels-photo-6684824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            image:  'imgs/thobs/th8.jpeg' // يمكنك استبدال هذا بالرابط الصحيح للصورة
         },
         'suits': {
             title: 'البدلات الرجالية الفخمة',
@@ -52,12 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
                 <p>تألق بأناقة لا مثيل لها مع بدلات "لمسات الإيطالي" التي تجمع بين التراث والحداثة.</p>
             `,
-            image: 'https://images.pexels.com/photos/157675/fashion-men-s-fashion-suit-mancini-157675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            image:  'imgs/مجلد جديد/child.png' // يمكنك استبدال هذا بالرابط الصحيح للصورة
         },
         'coats': {
-            title: 'المعاطف الرجالية الأنيقة',
+            title: 'الاكوات الرجالية الأنيقة',
             description: `
-                <p>تجسد معاطفنا الرجالية الفخامة والدفء، وهي إضافة مثالية لخزانة الرجل العصري في الأجواء الباردة. تم تصميم كل معطف بعناية فائقة ليوفر الراحة والأناقة، مع الحفاظ على خطوط التصميم الإيطالي الكلاسيكي والحديث.</p>
+                <p>تجسد اكواتنا الرجالية الفخامة والدفء، وهي إضافة مثالية لخزانة الرجل العصري في الأجواء الباردة. تم تصميم كل معطف بعناية فائقة ليوفر الراحة والأناقة، مع الحفاظ على خطوط التصميم الإيطالي الكلاسيكي والحديث.</p>
                 <h4>تفاصيل ومميزات:</h4>
                 <ul>
                     <li><strong>الأقمشة:</strong> نستخدم الصوف الخالص، الكشمير، ومزيج الصوف الفاخر المقاوم للماء لضمان الدفء والمتانة.</li>
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
                 <p>كن مستعدًا للأناقة والدفء مع معاطف "لمسات الإيطالي" الفاخرة.</p>
             `,
-            image: 'https://images.pexels.com/photos/10188686/pexels-photo-10188686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            image:  'imgs/مجلد جديد/child.png' // يمكنك استبدال هذا بالرابط الصحيح للصورة
         },
         'shawls': {
             title: 'الشيلان الرجالية الراقية',
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
                 <p>أكمل أناقتك وتميز بشيلان "لمسات الإيطالي" الفاخرة.</p>
             `,
-            image: 'https://images.pexels.com/photos/9779374/pexels-photo-9779374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            image:  'imgs/shal/prof.jpg' // يمكنك استبدال هذا بالرابط الصحيح للصورة
         },
         'school-uniforms': {
             title: 'الأزياء المدرسية ذات الجودة العالية',
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </ul>
                 <p>اختر "لمسات الإيطالي" لزي مدرسي يضمن الراحة والأناقة لأبنائنا الطلاب.</p>
             `,
-            image: 'https://images.pexels.com/photos/17697843/pexels-photo-17697843/free-photo-of-man-in-white-dress-wearing-turban.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            image: 'imgs/school/prof.jpg'
         }
     };
 
