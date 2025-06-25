@@ -614,7 +614,7 @@ background-image: url('../imgs/contat.png');
 
 .product-item img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
     display: block;
     border-bottom: 1px solid var(--border-color);
@@ -765,7 +765,7 @@ background-image: url('../imgs/contat.png');
         grid-template-columns: 1fr; /* Single column on very small screens */
     }
     .product-item img {
-        height: 180px;
+        height: 250px;
     }
 }
 
