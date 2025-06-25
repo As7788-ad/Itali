@@ -11,8 +11,8 @@
     --background-color-dark: #e0e0e0;
     --card-background: #ffffff;
     --border-color: #eeeeee;
-    --shadow-light: rgba(0, 0, 0, 0.08);
-    --shadow-medium: rgba(0, 0, 0, 0.15);
+    --shadow-light: rgb(126, 151, 175);
+    --shadow-medium: rgba(56, 49, 49, 0.15);
     --transition-speed: 0.3s;
 }
 
@@ -680,7 +680,7 @@ background-image: url('../imgs/contat.png');
 
 .modal-content {
     background-color: var(--card-background);
-    margin: auto;
+    margin: 50px auto;
     padding: 30px;
     border-radius: 15px;
     width: 90%;
@@ -709,7 +709,7 @@ background-image: url('../imgs/contat.png');
     object-fit: contain; /* Ensure image fits well */
     border-radius: 8px;
     margin-bottom: 25px;
-    box-shadow: 0 4px 10px var(--shadow-light);
+    box-shadow: 0 18px 17px var(--shadow-light);
 }
 
 .modal-content p {

@@ -116,19 +116,32 @@ document.addEventListener('DOMContentLoaded', () => {
                     modalDescriptionContainer.innerHTML = productInfo.description;
 
                     categoryModal.style.display = 'block';
+                    history.pushState({ modalOpen: true }, '', `#${productKey}`);
                 }
             });
         });
 
         closeButton.addEventListener('click', () => {
             categoryModal.style.display = 'none';
+                    // ✅ عند الإغلاق اليدوي، نعود للوراء خطوة (لإزالة الهاش)
+        history.back();
+
         });
 
         window.addEventListener('click', (event) => {
             if (event.target == categoryModal) {
                 categoryModal.style.display = 'none';
+                // ✅ نفس الشيء عند الضغط خارج النافذة
+            history.back();
             }
         });
+         // ✅ هذا الحدث مهم: يُنفذ عند الضغط على زر الرجوع (Back)
+    window.addEventListener('popstate', (event) => {
+        // إذا كانت النافذة مفتوحة، نغلقها بدل الرجوع للصفحة السابقة
+        if (categoryModal.style.display === 'block') {
+            categoryModal.style.display = 'none';
+        }
+    });
     }
 
     // 3. FAQ Accordion Logic (خاص بصفحة الخدمات services.html)
