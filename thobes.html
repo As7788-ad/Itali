@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثياب رجالية - لمسات الإيطالي للخياطة الرجالية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">لمسات الإيطالي للخياطة</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html" class="active">موديلاتنا</a></li>
+                    <li><a href="fabrics.html">الأقمشة</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+             <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="ابحث عن موديل أو فئة...">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="authButton" class="auth-button">
+            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+        </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/6684824/pexels-photo-6684824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <div class="container">
+                <h2>ثياب رجالية عصرية وفاخرة</h2>
+                <p>اكتشف مجموعتنا المختارة من الثياب الرجالية التي تجمع بين الأصالة العربية واللمسة الإيطالية الراقية. تصميمات مريحة وأنيقة تناسب جميع المناسبات وتبرز ذوقك الرفيع.</p>
+            </div>
+        </section>
+
+        <section class="products-listing-section">
+            <div class="container">
+                <h3 class="section-title">أحدث موديلات الثياب الرجالية</h3>
+                <div class="products-grid" id="category-products-grid">
+                    </div>
+            </div>
+        </section>
+
+        <div id="productDetailsModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="modalProductTitle"></h3>
+                <img id="modalProductImage" src="" alt="Product Image">
+                <p class="modal-product-price" id="modalProductPrice"></p>
+                <div id="modalProductDescription"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>عن لمسات الإيطالي</h3>
+                    <p>لمسات الإيطالي للخياطة الرجالية، اسم يمني عريق في عالم الأناقة الرجالية، ملتزمون بتقديم أجود أنواع الأقمشة وأحدث التصاميم العصرية.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">موديلاتنا</a></li>
+                        <li><a href="fabrics.html">الأقمشة</a></li>
+                        <li><a href="services.html">خدماتنا</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> صنعاء - سعوان - شارع النصر * جوار سوق النصر للقات</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+967773534990">773534990</a></p>
+                    <p><i class="fas fa-envelope"></i> info@lamsat-alitaly.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 لمسات الإيطالي للخياطة. جميع الحقوق محفوظة.
+            </div>
+        </div>
+    </footer>
+<div id="authModal" class="auth-modal" style="display: none;">
+    <div class="auth-modal-content">
+        <span class="close-button">&times;</span>
+        <h3>إنشاء حساب جديد / تسجيل الدخول</h3>
+        <form id="registerForm" class="auth-form">
+            <label for="regName">الاسم الكامل:</label>
+            <input type="text" id="regName" placeholder="أدخل اسمك الكامل" required>
+
+            <label for="regEmail">البريد الإلكتروني:</label>
+            <input type="email" id="regEmail" placeholder="أدخل بريدك الإلكتروني" required>
+
+            <label for="regPassword">كلمة المرور:</label>
+            <input type="password" id="regPassword" placeholder="أدخل كلمة المرور" required>
+
+            <label for="regConfirmPassword">تأكيد كلمة المرور:</label>
+            <input type="password" id="regConfirmPassword" placeholder="أعد إدخال كلمة المرور" required>
+
+            <button type="submit" class="btn-register">تسجيل / دخول</button>
+            <div id="registerMessage" class="message"></div>
+        </form>
+    </div>
+</div>
+    <script src="js/category-products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

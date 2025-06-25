@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - لمسات الإيطالي للخياطة الرجالية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">لمسات الإيطالي للخياطة</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">موديلاتنا</a></li>
+                    <li><a href="fabrics.html">الأقمشة</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                </ul>
+            </nav>
+                <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="ابحث عن موديل أو فئة...">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="authButton" class="auth-button">
+            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+        </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">تواصل معنا أو احجز موعدك</h2>
+                <div class="contact-grid">
+                    <div class="contact-info-block">
+                        <h3>معلومات التواصل</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> صنعاء - سعوان - شارع النصر * جوار سوق النصر للقات</p>
+                        <p><i class="fas fa-phone"></i> <strong>الهاتف:</strong> <a href="tel:+967773534990">773534990</a></p>
+                        <p><i class="fas fa-envelope"></i> <strong>البريد الإلكتروني:</strong> <a href="mailto:info@lamsat-alitaly.com">info@lamsat-alitaly.com</a></p>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15386.130985852581!2d44.20455800000001!3d15.352003000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603dbdd9f836fdd%3A0x673a5a41c1f4e1f!2z2KzZhti32Kgg2KfZhNiv2YfZhNmK2Kkg2YTZhNiz2K3YsdmI2Kgg2KfZhNin2YTYrdiq2Kk!5e0!3m2!1sen!ye!4v1719119642959!5m2!1sen!ye" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form-block">
+                        <h3>أرسل لنا رسالة</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="contactName">اسمك الكامل:</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">بريدك الإلكتروني:</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">الموضوع:</label>
+                                <input type="text" id="contactSubject" name="contactSubject">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">رسالتك:</label>
+                                <textarea id="contactMessage" name="contactMessage" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                            <p id="contactFormMessage" class="form-feedback"></p>
+                        </form>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">احجز موعدك</h3>
+                <form id="appointmentForm" class="appointment-form">
+                    <div class="form-group">
+                        <label for="appName">اسمك الكامل:</label>
+                        <input type="text" id="appName" name="appName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appPhone">رقم الهاتف:</label>
+                        <input type="tel" id="appPhone" name="appPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appDate">التاريخ المفضل:</label>
+                        <input type="date" id="appDate" name="appDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appTime">الوقت المفضل:</label>
+                        <input type="time" id="appTime" name="appTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appService">نوع الخدمة المطلوبة:</label>
+                        <select id="appService" name="appService" required>
+                            <option value="">اختر خدمة...</option>
+                            <option value="تفصيل بدلة">تفصيل بدلة</option>
+                            <option value="تفصيل ثوب/دشداشة">تفصيل ثوب/دشداشة</option>
+                            <option value="تعديلات">تعديلات</option>
+                            <option value="استشارة تصميم">استشارة تصميم</option>
+                            <option value="أخذ مقاسات">أخذ مقاسات</option>
+                            <option value="أخرى">أخرى</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="appNotes">ملاحظات إضافية:</label>
+                        <textarea id="appNotes" name="appNotes" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">تأكيد الحجز</button>
+                    <p id="appointmentFormMessage" class="form-feedback"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>عن لمسات الإيطالي</h3>
+                    <p>لمسات الإيطالي للخياطة الرجالية، اسم يمني عريق في عالم الأناقة الرجالية، ملتزمون بتقديم أجود أنواع الأقمشة وأحدث التصاميم العصرية.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">موديلاتنا</a></li>
+                        <li><a href="fabrics.html">الأقمشة</a></li>
+                        <li><a href="services.html">خدماتنا</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> صنعاء - سعوان - شارع النصر * جوار سوق النصر للقات</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+967773534990">773534990</a></p>
+                    <p><i class="fas fa-envelope"></i> info@lamsat-alitaly.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 لمسات الإيطالي للخياطة. جميع الحقوق محفوظة.
+            </div>
+        </div>
+    </footer>
+<div id="authModal" class="auth-modal" style="display: none;">
+    <div class="auth-modal-content">
+        <span class="close-button">&times;</span>
+        <h3>إنشاء حساب جديد / تسجيل الدخول</h3>
+        <form id="registerForm" class="auth-form">
+            <label for="regName">الاسم الكامل:</label>
+            <input type="text" id="regName" placeholder="أدخل اسمك الكامل" required>
+
+            <label for="regEmail">البريد الإلكتروني:</label>
+            <input type="email" id="regEmail" placeholder="أدخل بريدك الإلكتروني" required>
+
+            <label for="regPassword">كلمة المرور:</label>
+            <input type="password" id="regPassword" placeholder="أدخل كلمة المرور" required>
+
+            <label for="regConfirmPassword">تأكيد كلمة المرور:</label>
+            <input type="password" id="regConfirmPassword" placeholder="أعد إدخال كلمة المرور" required>
+
+            <button type="submit" class="btn-register">تسجيل / دخول</button>
+            <div id="registerMessage" class="message"></div>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

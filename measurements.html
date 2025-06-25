@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل المقاسات الأولية - لمسات الإيطالي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">لمسات الإيطالي للخياطة</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">موديلاتنا</a></li>
+                    <li><a href="fabrics.html">الأقمشة</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+                <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="ابحث عن موديل أو فئة...">
+            <button id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+        <button id="authButton" class="auth-button">
+            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+        </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="measurements-section">
+            <div class="container">
+                <h2 class="section-title">دليل أخذ المقاسات الأولية</h2>
+                <p class="intro-text">لضمان أفضل ملاءمة، يرجى اتباع التعليمات أدناه لأخذ مقاساتك الأولية. هذه المقاسات ستساعدنا في فهم احتياجاتك قبل موعد التفصيل النهائي.</p>
+
+                <div class="measurement-steps">
+                    <div class="step-guide">
+                        <img src="https://via.placeholder.com/400x300/F8F8F8/333333?text=طول+الكتف" alt="صورة توضيحية لطول الكتف">
+                        <div class="step-description">
+                            <h4>1. طول الكتف (Shoulder Length)</h4>
+                            <p>قم بقياس المسافة من طرف الكتف الأيمن إلى طرف الكتف الأيسر عبر الجزء العلوي من الظهر.</p>
+                        </div>
+                    </div>
+                    <div class="step-guide">
+                        <img src="https://via.placeholder.com/400x300/F8F8F8/333333?text=طول+الكم" alt="صورة توضيحية لطول الكم">
+                        <div class="step-description">
+                            <h4>2. طول الكم (Sleeve Length)</h4>
+                            <p>من نهاية الكتف (حيث أخذت قياس الكتف) إلى الرسغ، مع ثني المرفق قليلاً إذا كان للبدلات.</p>
+                        </div>
+                    </div>
+                    <div class="step-guide">
+                        <img src="https://via.placeholder.com/400x300/F8F8F8/333333?text=محيط+الصدر" alt="صورة توضيحية لمحيط الصدر">
+                        <div class="step-description">
+                            <h4>3. محيط الصدر (Chest Circumference)</h4>
+                            <p>لف شريط القياس حول أوسع جزء من صدرك، أسفل الإبطين مباشرةً.</p>
+                        </div>
+                    </div>
+                    <div class="step-guide">
+                        <img src="https://via.placeholder.com/400x300/F8F8F8/333333?text=محيط+الخصر" alt="صورة توضيحية لمحيط الخصر">
+                        <div class="step-description">
+                            <h4>4. محيط الخصر (Waist Circumference)</h4>
+                            <p>قس حول الجزء الضيق من خصرك، عادةً فوق السرة بقليل.</p>
+                        </div>
+                    </div>
+                    <div class="step-guide">
+                        <img src="https://via.placeholder.com/400x300/F8F8F8/333333?text=محيط+الورك" alt="صورة توضيحية لمحيط الورك">
+                        <div class="step-description">
+                            <h4>5. محيط الورك (Hip Circumference)</h4>
+                            <p>قس حول أوسع جزء من وركيك.</p>
+                        </div>
+                    </div>
+                    <div class="step-guide">
+                        <img src="https://via.placeholder.com/400x300/F8F8F8/333333?text=طول+البنطال" alt="صورة توضيحية لطول البنطال">
+                        <div class="step-description">
+                            <h4>6. طول البنطال (Pants Length)</h4>
+                            <p>من أعلى الخصر إلى الكاحل (أو الطول المطلوب للبنطال).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">أدخل مقاساتك</h3>
+                <form id="measurementForm" class="measurement-form">
+                    <div class="form-group">
+                        <label for="name">اسمك الكامل:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">بريدك الإلكتروني:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="shoulder">طول الكتف (سم):</label>
+                        <input type="number" id="shoulder" name="shoulder" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sleeve">طول الكم (سم):</label>
+                        <input type="number" id="sleeve" name="sleeve" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="chest">محيط الصدر (سم):</label>
+                        <input type="number" id="chest" name="chest" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="waist">محيط الخصر (سم):</label>
+                        <input type="number" id="waist" name="waist" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hip">محيط الورك (سم):</label>
+                        <input type="number" id="hip" name="hip" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pants-length">طول البنطال (سم):</label>
+                        <input type="number" id="pants-length" name="pants_length" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">ملاحظات إضافية:</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">إرسال المقاسات</button>
+                    <p id="formMessage" style="margin-top: 20px; text-align: center; font-weight: bold;"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>عن لمسات الإيطالي</h3>
+                    <p>لمسات الإيطالي للخياطة الرجالية، اسم يمني عريق في عالم الأناقة الرجالية، ملتزمون بتقديم أجود أنواع الأقمشة وأحدث التصاميم العصرية.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">موديلاتنا</a></li>
+                        <li><a href="fabrics.html">الأقمشة</a></li>
+                        <li><a href="services.html">خدماتنا</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> صنعاء - سعوان - شارع النصر * جوار سوق النصر للقات</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+967773534990">773534990</a></p>
+                    <p><i class="fas fa-envelope"></i> info@lamsat-alitaly.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 لمسات الإيطالي للخياطة. جميع الحقوق محفوظة.
+            </div>
+        </div>
+    </footer>
+<div id="authModal" class="auth-modal" style="display: none;">
+    <div class="auth-modal-content">
+        <span class="close-button">&times;</span>
+        <h3>إنشاء حساب جديد / تسجيل الدخول</h3>
+        <form id="registerForm" class="auth-form">
+            <label for="regName">الاسم الكامل:</label>
+            <input type="text" id="regName" placeholder="أدخل اسمك الكامل" required>
+
+            <label for="regEmail">البريد الإلكتروني:</label>
+            <input type="email" id="regEmail" placeholder="أدخل بريدك الإلكتروني" required>
+
+            <label for="regPassword">كلمة المرور:</label>
+            <input type="password" id="regPassword" placeholder="أدخل كلمة المرور" required>
+
+            <label for="regConfirmPassword">تأكيد كلمة المرور:</label>
+            <input type="password" id="regConfirmPassword" placeholder="أعد إدخال كلمة المرور" required>
+
+            <button type="submit" class="btn-register">تسجيل / دخول</button>
+            <div id="registerMessage" class="message"></div>
+        </form>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
