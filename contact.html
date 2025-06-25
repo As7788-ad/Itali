@@ -9,26 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="main-header">
+ <header class="main-header">
         <div class="container">
             <h1 class="logo">لمسات الإيطالي للخياطة</h1>
-            <nav class="main-nav">
+            <!-- Hamburger Button for Mobile -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="القائمة" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav" id="mainNav">
                 <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
                     <li><a href="products.html">موديلاتنا</a></li>
-                    <li><a href="fabrics.html">الأقمشة</a></li>
-                    <li><a href="services.html">خدماتنا</a></li>
-                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                    <li><a href="#">الأقمشة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
                 <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="ابحث عن موديل أو فئة...">
-            <button id="searchButton"><i class="fas fa-search"></i></button>
-        </div>
-        <button id="authButton" class="auth-button">
-            <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
-        </button>
+                    <input type="text" id="searchInput" placeholder="ابحث عن موديل أو فئة...">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="authButton" class="auth-button">
+                    <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
+                </button>
+            </div>
         </div>
     </header>
 
